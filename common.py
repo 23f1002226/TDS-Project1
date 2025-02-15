@@ -13,11 +13,8 @@ import os
 from typing import Dict, Any
 from fastapi import HTTPException
 import json
-from dotenv import load_dotenv
 
 from base_logger import logger
-
-load_dotenv()
 
 USE_PERSONAL_TOKEN = False
 
@@ -27,7 +24,7 @@ if USE_PERSONAL_TOKEN:
     OPENAI_API_URL = "https://api.openai.com/v1/"
 
 else:
-    OPENAI_API_KEY = os.environ["AIPROXY_TOKEN"]
+    OPENAI_API_KEY = os._Environ["AIPROXY_TOKEN"]
     # OPENAI_API_URL = "http://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
     OPENAI_API_URL = "http://aiproxy.sanand.workers.dev/openai/v1/"
 
