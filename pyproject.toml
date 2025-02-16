@@ -1,0 +1,16 @@
+[project]
+name = "tdsProject1"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+dependencies = [
+  "httpx",
+  "fastapi",
+  "uvicorn",
+  "faker",
+  "pillow",
+  "requests",
+  "python-dateutil",
+  "numpy>=2.2.3",
+  "markdown>=3.7",
+]
